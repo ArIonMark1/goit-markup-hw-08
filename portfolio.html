@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./images/svg-labels/WebStudio.svg"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- Шапка сайту -->
+    <header class="header">
+      <div class="container header__container">
+        <nav class="navigation__container">
+          <a href="index.html" lang="en" class="logo">
+            Web<span class="logo__header">Studio</span></a
+          >
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a class="navigation__link" href="./index.html">Студія</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link current" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__ico" width="16px" height="12px">
+                <use href="./images/svg-labels/icons.svg#icon-envelope"></use>
+              </svg>
+              <p>info@devstudio.com</p></a
+            >
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__ico" width="10px" height="16px">
+                <use href="./images/svg-labels/icons.svg#icon-smartphone"></use>
+              </svg>
+              <p>+38 096 111 11 11</p></a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Основний контент -->
+    <main>
+      <section class="portfolio-content">
+        <div class="container">
+          <!-- Список кнопок фільтрації -->
+          <ul class="filtration">
+            <li class="filtration__section">
+              <button type="button" class="filtration__button">Усі</button>
+            </li>
+            <li class="filtration__section">
+              <button type="button" class="filtration__button">
+                Веб-сайти
+              </button>
+            </li>
+            <li class="filtration__section">
+              <button type="button" class="filtration__button">Додатки</button>
+            </li>
+            <li class="filtration__section">
+              <button type="button" class="filtration__button">Дизайн</button>
+            </li>
+            <li class="filtration__section">
+              <button type="button" class="filtration__button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+          <!-- Контент для фільтрації -->
+          <ul class="content-cards">
+            <li class="content-cards__section">
+              <div class="modal">
+                <img
+                  class="modal__image"
+                  src="./images/technology.png"
+                  alt="ноутбук"
+                  width="370"
+                />
+                <p class="modal__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  nulla dignissimos sequi quaerat odit. Tempora doloribus,
+                  commodi alias ad quod, perspiciatis quo architecto
+                  necessitatibus, corporis placeat facere aliquam consectetur
+                  eos? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Sunt doloremque rem qui odit enim minima, maiores nesciunt
+                  consequuntur corporis alias earum quam incidunt recusandae
+                  dolor voluptatem dignissimos? Fuga, eum aspernatur!
+                </p>
+              </div>
+              <div class="item-content">
+                <h3 class="item-content__header">Технокряк</h3>
+                <p class="item-content__description">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="content-cards__section">
+              <div class="modal">
+                <img
+                  class="modal__image"
+                  src="./images/bascetball.png"
+                  alt="постер з баскетболістами"
+                  width="370"
+                />
+                <p class="modal__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto, iste nulla. Similique error laboriosam
+                  reprehenderit deleniti explicabo a aspernatur earum
+                  architecto, dolore ea quaerat, quisquam commodi sequi, magnam
+                  doloremque unde!
+                </p>
+              </div>
+
+              <div class="item-content">
+                <h3 class="item-content__header">
+                  Постер New Orlean vs Golden Star
+                </h3>
+                <p class="item-content__description">Дизайн</p>
+              </div>
+            </li>
+            <li class="content-cards__section">
+              <div class="modal">
+                <img
+                  class="modal__image"
+                  src="./images/seafood.png"
+                  alt="ресторан Seafood"
+                  width="370"
+                />
+                <p class="modal__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur nemo laboriosam aperiam, veritatis vitae in itaque ea
+                  nesciunt omnis odit repellendus eligendi earum dolore natus
+                  praesentium, dolorem magni, dolores dicta!
+                </p>
+              </div>
+
+              <div class="item-content">
+                <h3 class="item-content__header">Ресторан Seafood</h3>
+                <p class="item-content__description">Додаток</p>
+              </div>
+            </li>
+            <li class="content-cards__section">
+              <div class="modal">
+                <img
+                  class="modal__image"
+                  src="./images/headphone.png"
+                  alt="навушники"
+                  width="370"
+                />
+                <p class="modal__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                  corrupti? Maiores, doloribus sit voluptates inventore ipsum
+                  amet aliquid placeat fugit veniam in harum provident. Expedita
+                  eligendi eos soluta tenetur fugit!
+                </p>
+              </div>
+
+              <div class="item-content">
+                <h3 class="item-content__header">Проєкт Prime</h3>
+                <p class="item-content__description">Маркетинг</p>
+              </div>
+            </li>
+            <li class="content-cards__section">
+              <div class="modal">
+                <img
+                  class="modal__image"
+                  src="./images/boxes.png"
+                  alt="дизайни коробок"
+                  width="370"
+                />
+                <p class="modal__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                  corrupti? Maiores, doloribus sit voluptates inventore ipsum
+                  amet aliquid placeat fugit veniam in harum provident. Expedita
+                  eligendi eos soluta tenetur fugit!
+                </p>
+              </div>
+
+              <div class="item-content">
+                <h3 class="item-content__header">Проєкт Boxes</h3>
+                <p class="item-content__description">Додаток</p>
+              </div>
+            </li>
+            <li class="content-cards__section">
+              <div class="modal">
+                <img
+                  class="modal__image"
+                  src="./images/macbook.png"
+                  alt="аймак дисплей"
+                  width="370"
+                />
+                <p class="modal__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                  corrupti? Maiores, doloribus sit voluptates inventore ipsum
+                  amet aliquid placeat fugit veniam in harum provident. Expedita
+                  eligendi eos soluta tenetur fugit!
+                </p>
+              </div>
+
+              <div class="item-content">
+                <h3 class="item-content__header">Inspiration has no Borders</h3>
+                <p class="item-content__description">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="content-cards__section">
+              <div class="modal">
+                <img
+                  class="modal__image"
+                  src="./images/edition.png"
+                  alt="дизайн книг"
+                  width="370"
+                />
+                <p class="modal__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                  corrupti? Maiores, doloribus sit voluptates inventore ipsum
+                  amet aliquid placeat fugit veniam in harum provident. Expedita
+                  eligendi eos soluta tenetur fugit!
+                </p>
+              </div>
+
+              <div class="item-content">
+                <h3 class="item-content__header">Видання Limited Edition</h3>
+                <p class="item-content__description">Дизайн</p>
+              </div>
+            </li>
+            <li class="content-cards__section">
+              <div class="modal">
+                <img
+                  class="modal__image"
+                  src="./images/label.png"
+                  alt="реклама бренду"
+                  width="370"
+                />
+                <p class="modal__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                  corrupti? Maiores, doloribus sit voluptates inventore ipsum
+                  amet aliquid placeat fugit veniam in harum provident. Expedita
+                  eligendi eos soluta tenetur fugit!
+                </p>
+              </div>
+
+              <div class="item-content">
+                <h3 class="item-content__header">Проєкт LAB</h3>
+                <p class="item-content__description">Маркетинг</p>
+              </div>
+            </li>
+            <li class="content-cards__section">
+              <div class="modal">
+                <img
+                  class="modal__image"
+                  src="./images/laptop.png"
+                  alt="додаток презентація"
+                  width="370"
+                />
+                <p class="modal__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                  corrupti? Maiores, doloribus sit voluptates inventore ipsum
+                  amet aliquid placeat fugit veniam in harum provident. Expedita
+                  eligendi eos soluta tenetur fugit!
+                </p>
+              </div>
+
+              <div class="item-content">
+                <h3 class="item-content__header">Growing Business</h3>
+                <p class="item-content__description">Додаток</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Підвал сайту -->
+    <footer class="footer">
+      <div class="footer__container">
+        <address class="address">
+          <a href="index.html" lang="en" class="logo"
+            >Web<span class="logo__botom">Studio</span></a
+          >
+          <ul class="footer-contacts">
+            <li class="footer-contacts__item">
+              <a
+                class="footer-contacts__content"
+                href="https://goo.gl/maps/BC4n3QJLsoe9X29g8"
+                target="_blank"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="footer-contacts__item">
+              <a
+                class="footer-contacts__content contact"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="footer-contacts__item">
+              <a
+                class="footer-contacts__content contact"
+                href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <!-- ######################################## Links ######################################## -->
+        <div class="second-address">
+          <p class="social-links-header">Приєднуйтесь</p>
+
+          <ul class="social-links">
+            <li class="social-links__container">
+              <a class="social-links__link" href="https://www.instagram.com">
+                <svg class="social-links__icon" width="20" height="20">
+                  <use
+                    href="./images/svg-labels/icons.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__container">
+              <a class="social-links__link" href="#">
+                <svg class="social-links__icon" width="20" height="20">
+                  <use href="./images/svg-labels/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__container">
+              <a class="social-links__link" href="#">
+                <svg class="social-links__icon" width="20" height="20">
+                  <use href="./images/svg-labels/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__container">
+              <a class="social-links__link" href="#">
+                <svg class="social-links__icon" width="20" height="20">
+                  <use href="./images/svg-labels/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- ####################### subscribe ####################### -->
+        <div class="subscription">
+          <label for="EmailSubscription" class="social-links-header"
+            >Підпишіться на розсилку</label
+          >
+
+          <form class="subscription-form">
+            <input
+              type="email"
+              class="subscription-form__input"
+              id="EmailSubscription"
+              placeholder="E-mail"
+              required
+            />
+            <!-- ################################ -->
+            <button type="submit" class="subscription-form__button">
+              <span class="subscription-form__label">
+                Підписатися
+                <svg class="subscription-form__image" width="24" height="24">
+                  <use href="./images/svg-labels/icons.svg#icon-send"></use>
+                </svg>
+              </span>
+            </button>
+          </form>
+          <!-- ######################################################### -->
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

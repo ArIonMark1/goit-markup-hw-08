@@ -1,0 +1,17 @@
+/* -------------------- Оформлення Лого ---------------- */
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--logo-color);
+    &__header {
+        color: var(--second-main-color, #212121);
+    }
+    &__botom {
+        color: var(--third-main-color, #ff4837);
+    }
+}

@@ -1,0 +1,40 @@
+/* -------------------- Перелік переваг компанії ---------- */
+.preference {
+    padding: 94px 0;
+    // border: 1px solid red;
+}
+.preference-list{
+    display: flex;
+    gap: 30px;
+    &__card {
+        /* <li> */
+        max-width: 270px;
+        flex-basis: calc((100% - 90px) / 4);
+    }
+    &__image {
+        height: 120px;
+        background: #f5f4fa;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    &__icon {
+        width: 70px;
+        height: 70px;
+    }
+    &__tittle {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        color: var(--second-main-color);
+    }
+    &__content {
+        line-height: 1.72;
+        color: var(--first-main-color);
+    }
+}

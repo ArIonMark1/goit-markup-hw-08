@@ -1,0 +1,149 @@
+/*---------------------- Стилі форми модального вікна ----------------------*/
+.tittle-form {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 12px;
+}
+/*---------------------- Сама форма ----------------------*/
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.input-box {
+    position: relative;
+}
+/* ******************************* */
+.input-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+    margin-bottom: 5px;
+}
+.form-input {
+    height: 40px;
+    width: 100%;
+    outline: transparent;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 36px;
+    padding-right: 12px;
+    transition: box-shadow var(--cubic-animation), border var(--cubic-animation);
+}
+.form-input:focus {
+    border: 1px solid var(--hover-link-color);
+}
+.input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.input-icon {
+    fill: #2f303a;
+    transition: fill var(--cubic-animation);
+}
+.form-input:focus+.input-icon {
+    fill: var(--hover-link-color);
+}
+.textarea-container {
+    margin-bottom: 20px;
+}
+.textarea {
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+}
+.textarea::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+/* ^^^^^^^^^^^^ confirm contract ^^^^^^^^^^^^ */
+.contract-confirm {
+    /*<div> in form*/
+    position: relative;
+}
+.is-hidden-checkbox {
+    opacity: 0;
+    pointer-events: none;
+    clip-path: none;
+    position: absolute;
+    overflow: hidden;
+
+    z-index: -1;
+    transform: translate(150%, 50%);
+}
+.label-input {
+    /* <label> complete!!! */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+.label-input span {
+    /* <span> */
+    width: 18px;
+    height: 18px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    margin-right: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: transparent;
+    transition: border var(--cubic-animation), fill var(--cubic-animation),
+        background-color var(--cubic-animation);
+}
+.checkbox:checked+.label-input span {
+    border: 2px solid transparent;
+    fill: var(--third-main-color);
+    background-color: var(--background-button-color);
+}
+.contract-link {
+    /* <a> */
+    margin-left: 3px;
+    text-decoration: underline;
+    color: var(--logo-color);
+}
+.contract-link:hover,
+.contract-link:focus {
+    outline: none;
+}
+/* ^^^^^^^^^^^^ confirm Button ^^^^^^^^^^^^ */
+.form-button {
+    position: absolute;
+    /* Зміщаємо на 50% від ліва а потім віднімаємо 50% власної ширини */
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    border: none;
+    background-color: var(--background-button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 50px;
+
+    color: var(--third-main-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    transition: background-color var(--cubic-animation);
+}
+.form-button:hover {
+    background-color: #188ce8;
+}
