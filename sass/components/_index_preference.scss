@@ -1,19 +1,24 @@
 /* -------------------- Перелік переваг компанії ---------- */
+
 .preference {
-    padding: 94px 0;
+    padding: 60px 0;
     // border: 1px solid red;
 }
-.preference-list{
+
+.preference-list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
+
     &__card {
-        /* <li> */
-        max-width: 270px;
-        flex-basis: calc((100% - 90px) / 4);
+        // border: 1px solid red;
+        text-align: center;
     }
     &__image {
-        height: 120px;
+        // height: 120px;
+        padding: 25px 0;
         background: #f5f4fa;
+        // border: 1px solid grey;
         border-radius: 4px;
         display: flex;
         align-items: center;
@@ -25,8 +30,7 @@
         height: 70px;
     }
     &__tittle {
-        font-weight: 700;
-        font-size: 14px;
+        font-size: inherit;
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
@@ -34,7 +38,37 @@
         color: var(--second-main-color);
     }
     &__content {
+        font-size: inherit;
         line-height: 1.72;
+        letter-spacing: 0.03em;
         color: var(--first-main-color);
     }
+}
+
+
+@media screen and (min-width: 1600px) {
+    .preference {
+            padding: 94px 0;
+        }
+    
+        .preference-list {
+            flex-direction: row;
+    
+            &__card {
+                /* <li> */
+                width: 270px;
+                flex-basis: calc((100% - 90px) / 4);
+            }
+    
+            &__image {
+                // height: 120px;
+                background: #f5f4fa;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 30px;
+            }
+        }
+    
 }

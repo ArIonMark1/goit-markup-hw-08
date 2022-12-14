@@ -13,6 +13,9 @@ body {
 }
 img {
     display: block;
+    min-width: 100%;
+    height: auto;
+    width: 100%;
 }
 /* -------------------- Загальні стилі кнопок -------------------- */
 .button {
@@ -20,9 +23,20 @@ img {
     font-family: inherit;
 }
 .container {
-    max-width: 1200px;
+    width: 100%;
+    // max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    outline: 1px solid red;
+}
+@media screen and (min-width: 1600px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+        // outline: 1px solid red;
+    }
+    
 }
 /* --------------- Загальні стилі заголовків секцій ----- */
 .section-title {
