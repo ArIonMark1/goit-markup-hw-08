@@ -1,4 +1,4 @@
-# goit-markup-hw-07
+# goit-markup-hw-08
 
 HTML and CSS project of an online school GoIT
 
