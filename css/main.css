@@ -185,7 +185,6 @@ img {
 .hero {
   margin: 0 auto;
   padding: 118px 0;
-  width: 100%;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team.jpg);
   background-repeat: no-repeat;
@@ -1083,7 +1082,10 @@ img {
   right: 20px;
   width: 30px;
   height: 30px;
-  border: 1px solid red;
+}
+.close-button:hover, .close-button:focus {
+  outline: none;
+  fill: var(--hover-link-color, red);
 }
 
 .is-open {
@@ -1094,6 +1096,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  flex-grow: 2;
 }
 .nav-list__item {
   position: relative;
@@ -1108,5 +1111,44 @@ img {
   transition: color var(--cubic-animation);
 }
 .nav-list__link:hover, .nav-list__link:focus {
+  outline: none;
   color: var(--hover-link-color, red);
+}
+
+.modal-contacts {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.modal-contacts__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.modal-social {
+  display: flex;
+  bottom: 0;
+  margin-bottom: -100%;
+}
+.modal-social__container {
+  padding: 0 10px;
+  border-right: 1px solid grey;
+}
+.modal-social :first-child {
+  padding-left: 0;
+}
+.modal-social :last-child {
+  border-right: none;
+}
+.modal-social__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--hover-link-color);
 }/*# sourceMappingURL=main.css.map */
