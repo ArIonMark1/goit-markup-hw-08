@@ -62,6 +62,15 @@
             >
           </li>
         </ul>
+        <button
+          type="button"
+          aria-controls="mobile-menu"
+          class="button nav-button js-open-menu"
+        >
+          <svg class="nav-button__image" width="24" height="24">
+            <use href="./images/svg-labels/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Основний контент -->
@@ -633,6 +642,30 @@
         </form>
       </div>
     </div>
+    <!-- ##################################################### -->
+    <div class="modal-nav js-menu-container" id="mobile-menu">
+      <button
+        type="button"
+        class="button close-button js-close-menu"
+        data-modal-close
+      >
+        <svg class="nav-link-icon" width="20" height="20">
+          <use href="./images/svg-labels/icons.svg#icon-close_24"></use>
+        </svg>
+      </button>
+      <ul class="nav-list">
+        <li class="nav-list__item">
+          <a class="nav-list__link current" href="./index.html">Студія</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#">Контакти</a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

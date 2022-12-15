@@ -44,7 +44,6 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
-
 @media screen and (min-width: 1440px) {
   .container, .footer__container, .header__container {
     max-width: 1200px;
@@ -52,6 +51,7 @@ img {
     padding: 0 15px;
   }
 }
+
 /* --------------- Загальні стилі заголовків секцій ----- */
 .section-title {
   font-weight: 700;
@@ -62,7 +62,6 @@ img {
   margin-bottom: 30px;
   color: var(--second-main-color);
 }
-
 @media screen and (min-width: 1440px) {
   .section-title {
     font-size: 36px;
@@ -70,18 +69,20 @@ img {
     margin-bottom: 50px;
   }
 }
+
 .header {
   padding: 16px 0;
   border-bottom: 1px solid #ececec;
-  position: -webkit-sticky;
-  position: sticky;
-  z-index: 1;
-  top: 0;
   background-color: #fff;
 }
 .header__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__container {
+  display: flex;
 }
 
 .navigation {
@@ -92,6 +93,77 @@ img {
   display: none;
 }
 
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 25px 0;
+    border-bottom: 1px solid #ececec;
+    background-color: #fff;
+  }
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navigation__container {
+    display: flex;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 90px;
+  }
+  .navigation__item {
+    position: relative;
+  }
+  .navigation__link {
+    display: flex;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--second-main-color);
+    transition: color var(--cubic-animation);
+  }
+  .navigation__link:hover, .navigation__link:focus {
+    color: var(--hover-link-color, red);
+  }
+  .current.navigation__link {
+    color: var(--hover-link-color);
+  }
+  .current.navigation__link::after {
+    position: absolute;
+    bottom: -33.5px;
+    content: "";
+    background-color: var(--hover-link-color);
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    transform: scaleX(1.1);
+  }
+  .contacts {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  .contacts__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--first-main-color);
+    transition: fill var(--cubic-animation), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contacts__link:hover, .contacts__link:focus {
+    color: var(--hover-link-color, red);
+    fill: var(--hover-link-color, red);
+  }
+  .contacts__ico {
+    fill: currentColor;
+  }
+}
 /* -------------------- Оформлення Лого ---------------- */
 .logo {
   font-family: "Raleway", sans-serif;
@@ -122,6 +194,7 @@ img {
 }
 .hero__tittle {
   font-size: 26px;
+  font-weight: 900;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
@@ -972,4 +1045,68 @@ img {
 
 .form-button:hover {
   background-color: #188ce8;
+}
+
+.modal-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 50px 40px;
+  background-color: var(--third-main-color);
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+@media screen and (min-width: 1024px) {
+  .modal-nav {
+    display: none;
+  }
+}
+
+.nav-button, .close-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 1024px) {
+  .nav-button, .close-button {
+    display: none;
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid red;
+}
+
+.is-open {
+  transform: translateX(0);
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.nav-list__item {
+  position: relative;
+}
+.nav-list__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--second-main-color);
+  transition: color var(--cubic-animation);
+}
+.nav-list__link:hover, .nav-list__link:focus {
+  color: var(--hover-link-color, red);
 }/*# sourceMappingURL=main.css.map */

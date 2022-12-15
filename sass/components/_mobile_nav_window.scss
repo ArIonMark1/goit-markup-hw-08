@@ -1,0 +1,64 @@
+.modal-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    padding: 50px 40px;
+    background-color: var(--third-main-color);
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+    @media screen and (min-width: 1024px) {
+            display: none;
+        }
+}
+    
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    @media screen and (min-width: 1024px) { display: none;}
+}
+.close-button {
+    @extend .nav-button;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid red;
+
+}
+
+.is-open {
+    transform: translateX(0);
+}
+// =======================================================
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &__item {
+        position: relative;
+    }
+
+    &__link {
+        // display: flex;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: var(--second-main-color);
+        transition: color var(--cubic-animation);
+
+        &:hover,
+        &:focus {
+            color: var(--hover-link-color, red);
+        }
+    }
+}
