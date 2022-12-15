@@ -66,6 +66,9 @@
             color: var(--hover-link-color, red);
         }
     }
+    .current {
+        color: var(--hover-link-color);
+    }
 }
 // =======================================================
 .modal-contacts {
@@ -73,6 +76,8 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    position: absolute;
+    bottom: 120px;
 
     &__link {
         text-decoration: none;
@@ -87,13 +92,15 @@
 
 .modal-social {
     display: flex;
-    // position: absolute;
-    bottom: 0;
-    margin-bottom: -100%;
+    // left: 50%;
+    // transform: translateX(-50%);
+
+    position: absolute;
+    bottom: 50px;
     &__container {
         padding: 0 10px;
-        // padding-right: 10px;
-        border-right: 1px solid grey;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        // transform: rotate(90deg);
     }
     :first-child {
         padding-left: 0;
@@ -107,7 +114,6 @@
         font-size: 18px;
         line-height: 1.22;
         letter-spacing: 0.02em;
-        color: var(--hover-link-color);
-        
+        color: var(--hover-link-color); 
     }
 }
