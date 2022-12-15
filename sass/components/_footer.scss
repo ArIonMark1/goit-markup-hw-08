@@ -1,15 +1,13 @@
 .footer {
-    background: var(--background-block-color);
+    background-color: var(--background-block-color);
     padding: 60px 0;
 
     &__container {
         @extend .container;
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
+        // width: 100%;
+        text-align: center;
     }
 }
-/* ------------ Загальні параметри футера ------------ */
 .social-links-header {
     font-size: inherit;
     font-weight: 700;
@@ -18,47 +16,45 @@
     text-transform: uppercase;
     color: var(--third-main-color);
 }
-/* ---- Контейнер якому задав загальний параметр для футера ---- */
-.address {
-    margin-right: 70px;
-}
-/* ------------ Загальні параметри списків футера ------------ */ 
 .footer-contacts {
     margin-top: 20px;
-
+    text-align: center;
     &__item {
         /* <li> */
         line-height: 1.72;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
 
         &:last-child {
             margin-bottom: 0;
         }
     }
-    &__content {
-        text-decoration: none;
-        font-style: normal;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color: var(--third-main-color);
-        transition: color var(--cubic-animation);
-
-        .contact {
-                color: rgba(255, 255, 255, 0.6);
-                transition: color var(--cubic-animation);
+        &__content {
+            text-decoration: none;
+            font-style: normal;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: var(--third-main-color);
+            transition: color var(--cubic-animation);
+            &:hover,
+            &:focus {
+                color: var(--hover-link-color);
             }
-        &:hover,
-        &:focus {
-            color: var(--hover-link-color);
         }
-    } 
 }
-// ################################ Links ################################ 
+
+.contact {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--cubic-animation);
+}
+.second-address {
+    padding: 60px 0;
+}
 .social-links {
-    @extend .footer-contacts;
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin-top: 20px;
+
     &__container {
         width: 44px;
         height: 44px;
@@ -86,17 +82,14 @@
         fill: currentColor;
     }
 }
-/* ------------------- Стилі форми підписки на розсилку ------------------- */
-.subscription {
-  flex-grow: 1;
-  margin-left: 90px;
-}
-/* Form-block with input and button */
+
 .subscription-form {
     margin-top: 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 12px;
+
     &__input {
         /* input field */
         outline: none;
@@ -105,7 +98,8 @@
         border-radius: 4px;
         background: transparent;
         padding: 0 12px 0 16px;
-        flex-grow: 1;
+
+        width: 100%;
         height: 50px;
 
         font-style: normal;
@@ -114,6 +108,7 @@
         line-height: 1.25;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
+
         &:hover {
             border: 2px solid var(--hover-link-color);
         }
@@ -127,9 +122,10 @@
         border: 1px solid transparent;
         border-radius: 4px;
         transition: background-color var(--cubic-animation);
+
         &:hover {
-                background-color: #188ce8;
-            }
+            background-color: #188ce8;
+        }
     }
     &__label {
         /* content on button */
@@ -138,15 +134,60 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
-    
+
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.88;
         letter-spacing: 0.06em;
         color: var(--third-main-color);
+
         .subscription-form__image {
-                fill: var(--third-main-color);
-            }
+            fill: var(--third-main-color);
+        }
     }
+}
+@media screen and (min-width: 1440px) {
+    .footer {
+        &__container {
+            text-align: left;
+            display: flex;
+            align-items: baseline;
+        }
+    }
+//     /* ---- Контейнер якому задав загальний параметр для футера ---- */
+    .address {
+        margin-right: 70px;
+    }
+
+//     /* ------------ Загальні параметри списків футера ------------ */
+    .footer-contacts {
+        text-align-last: left;
+
+        &__item {
+//      /* <li> */
+            margin-bottom: 10px;
+        }
+    }
+//     // ################################ Links ################################ 
+    .social-links {
+        &__container {
+            width: 44px;
+            height: 44px;
+        }
+    }
+//     /* ------------------- Стилі форми підписки на розсилку ------------------- */
+    .subscription {
+        flex-grow: 1;
+        margin-left: 90px;
+    }
+
+//     /* Form-block with input and button */
+    .subscription-form {
+
+        flex-direction: row;
+        &__input {
+            height: 50px;
+            }
+        }
 }

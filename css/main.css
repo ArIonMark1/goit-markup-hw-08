@@ -45,7 +45,7 @@ img {
   padding: 0 15px;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1440px) {
   .container, .footer__container, .header__container {
     max-width: 1200px;
     margin: 0 auto;
@@ -64,7 +64,7 @@ img {
 }
 
 .header {
-  padding: 25px 0;
+  padding: 16px 0;
   border-bottom: 1px solid #ececec;
   position: -webkit-sticky;
   position: sticky;
@@ -77,70 +77,12 @@ img {
   justify-content: space-between;
 }
 
-.navigation__container {
-  display: flex;
-}
-
-/* -------------------- Стилі списків заголовку ---------- */
 .navigation {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  margin-left: 90px;
-}
-.navigation__item {
-  position: relative;
-}
-.navigation__link {
-  display: flex;
-  text-decoration: none;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--second-main-color);
-  transition: color var(--cubic-animation);
-}
-.navigation__link:hover, .navigation__link:focus {
-  color: var(--hover-link-color, red);
+  display: none;
 }
 
-.current.navigation__link {
-  color: var(--hover-link-color);
-}
-.current.navigation__link::after {
-  position: absolute;
-  bottom: -33.5px;
-  content: "";
-  background-color: var(--hover-link-color);
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  transform: scaleX(1.1);
-}
-
-/* ######################################################## */
 .contacts {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
-.contacts__link {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--first-main-color);
-  transition: fill var(--cubic-animation), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contacts__link:hover, .contacts__link:focus {
-  color: var(--hover-link-color, red);
-  fill: var(--hover-link-color, red);
-}
-.contacts__ico {
-  fill: currentColor;
+  display: none;
 }
 
 /* -------------------- Оформлення Лого ---------------- */
@@ -199,9 +141,8 @@ img {
   color: #FFFFFF;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1440px) {
   .hero {
-    border: 1px solid red;
     margin: 0 auto;
     padding: 200px 0;
     max-width: 1600px;
@@ -281,7 +222,7 @@ img {
   color: var(--first-main-color);
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1440px) {
   .preference {
     padding: 94px 0;
   }
@@ -303,39 +244,48 @@ img {
   }
 }
 /* -------------------- Перелік стеку компанії ---------- */
-.occupations {
-  display: flex;
-  gap: 30px;
-}
-.occupations__section {
-  /* <li> */
-  max-width: 370px;
-  flex-basis: calc((100% - 60px) / 3);
+.steck-company {
+  display: none;
 }
 
-.description {
-  position: relative;
+@media screen and (min-width: 1440px) {
+  .steck-company {
+    display: block;
+    padding-bottom: 94px;
+  }
+  .occupations {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .occupations__section {
+    /* <li> */
+    max-width: 370px;
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  .description {
+    position: relative;
+  }
+  .description__image {
+    width: 100%;
+  }
+  .description__text {
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(47, 48, 58, 0.8);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }
-.description__image {
-  width: 100%;
-}
-.description__text {
-  position: absolute;
-  bottom: 0;
-  height: 70px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(47, 48, 58, 0.8);
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
 /* -------------------- Дані працівників компанії ---------- */
 .team {
   padding: 60px 0;
@@ -350,38 +300,82 @@ img {
 }
 .team-list__section {
   width: 100%;
-  flex-basis: calc((100% - 90px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-list .worker-info {
-  padding: 30px 32px;
+
+.worker-info {
+  padding: 30px 32px 16px;
   background: var(--third-main-color);
   border-radius: 0px 0px 4px 4px;
 }
+.worker-info__header {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--second-main-color);
+  margin-bottom: 10px;
+}
+.worker-info__content {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--first-main-color);
+  margin-bottom: 16px;
+}
 
-@media screen and (min-width: 1024px) {
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.social__container {
+  /* <li> */
+  height: 44px;
+  width: 44px;
+}
+.social__link {
+  display: inline-block;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+  transition: background-color var(--cubic-animation);
+}
+.social__link:hover, .social__link:focus {
+  background-color: var(--hover-link-color);
+}
+.social__link:hover .social__icon, .social__link:focus .social__icon {
+  fill: var(--third-main-color);
+}
+.social__icon {
+  fill: currentColor;
+  transition: fill var(--cubic-animation);
+}
+
+@media screen and (min-width: 1440px) {
   .team {
     padding-top: 92px;
     padding-bottom: 96px;
-    background: var(--background-team-block);
-    border: 5px solid green;
   }
   .team-list {
-    border: 5px solid green;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 30px;
   }
   .team-list__section {
     /* <li> */
-    width: 270px;
+    max-width: 270px;
     flex-basis: calc((100% - 90px) / 4);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-  }
-  .team-list__image {
-    width: 100%;
   }
   .worker-info {
     padding: 30px 32px;
@@ -440,17 +434,18 @@ img {
 }
 /* -------------------- Стилі лінків клієнтів компанії  ---------- */
 .regular-customers {
-  padding: 94px 0;
+  padding: 60px 0;
 }
 
 .customers {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
 .customers__section {
   height: 92px;
-  flex-basis: calc((100% - 150px) / 6);
+  flex-basis: calc((100% - 30px) / 2);
 }
 .customers__link {
   display: inline-block;
@@ -474,6 +469,14 @@ img {
   transition: fill var(--cubic-animation);
 }
 
+@media screen and (min-width: 1440px) {
+  .regular-customers {
+    padding: 94px 0;
+  }
+  .customers__section {
+    flex-basis: calc((100% - 150px) / 6);
+  }
+}
 .portfolio-content {
   padding: 94px 0;
 }
@@ -571,16 +574,13 @@ img {
 }
 
 .footer {
-  background: var(--background-block-color);
+  background-color: var(--background-block-color);
   padding: 60px 0;
 }
 .footer__container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  text-align: center;
 }
 
-/* ------------ Загальні параметри футера ------------ */
 .social-links-header {
   font-size: inherit;
   font-weight: 700;
@@ -590,19 +590,14 @@ img {
   color: var(--third-main-color);
 }
 
-/* ---- Контейнер якому задав загальний параметр для футера ---- */
-.address {
-  margin-right: 70px;
-}
-
-/* ------------ Загальні параметри списків футера ------------ */
-.footer-contacts, .social-links {
+.footer-contacts {
   margin-top: 20px;
+  text-align: center;
 }
 .footer-contacts__item {
   /* <li> */
   line-height: 1.72;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .footer-contacts__item:last-child {
   margin-bottom: 0;
@@ -615,18 +610,24 @@ img {
   color: var(--third-main-color);
   transition: color var(--cubic-animation);
 }
-.footer-contacts__content .contact {
+.footer-contacts__content:hover, .footer-contacts__content:focus {
+  color: var(--hover-link-color);
+}
+
+.contact {
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--cubic-animation);
 }
-.footer-contacts__content:hover, .footer-contacts__content:focus {
-  color: var(--hover-link-color);
+
+.second-address {
+  padding: 60px 0;
 }
 
 .social-links {
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin-top: 20px;
 }
 .social-links__container {
   width: 44px;
@@ -653,16 +654,10 @@ img {
   fill: currentColor;
 }
 
-/* ------------------- Стилі форми підписки на розсилку ------------------- */
-.subscription {
-  flex-grow: 1;
-  margin-left: 90px;
-}
-
-/* Form-block with input and button */
 .subscription-form {
   margin-top: 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 12px;
 }
@@ -674,7 +669,7 @@ img {
   border-radius: 4px;
   background: transparent;
   padding: 0 12px 0 16px;
-  flex-grow: 1;
+  width: 100%;
   height: 50px;
   font-style: normal;
   font-weight: 400;
@@ -716,6 +711,37 @@ img {
   fill: var(--third-main-color);
 }
 
+@media screen and (min-width: 1440px) {
+  .footer__container {
+    text-align: left;
+    display: flex;
+    align-items: baseline;
+  }
+  .address {
+    margin-right: 70px;
+  }
+  .footer-contacts {
+    -moz-text-align-last: left;
+         text-align-last: left;
+  }
+  .footer-contacts__item {
+    margin-bottom: 10px;
+  }
+  .social-links__container {
+    width: 44px;
+    height: 44px;
+  }
+  .subscription {
+    flex-grow: 1;
+    margin-left: 90px;
+  }
+  .subscription-form {
+    flex-direction: row;
+  }
+  .subscription-form__input {
+    height: 50px;
+  }
+}
 /* ------------------- Стилі модального вікна ------------------- */
 .background-window {
   position: fixed;
