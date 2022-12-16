@@ -1,11 +1,22 @@
 .portfolio-content {
-    padding: 94px 0;
+    padding: 60px 0;
+    @media screen and (min-width: 1024px) {
+        padding: 94px 0;
+    }
 }
 .filtration {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 10px;
-    margin-bottom: 50px;
+    width: 325px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 1024px) {
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin-bottom: 50px;
+        width: auto;
+    }
     &__button {
         @extend .button;
         border: none;
