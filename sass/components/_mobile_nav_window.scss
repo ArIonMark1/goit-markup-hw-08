@@ -12,6 +12,9 @@
     @media screen and (min-width: 1024px) {
             display: none;
         }
+    &.is-open {
+        transform: translateX(0);
+    }
 }
     
 .nav-button {
@@ -36,10 +39,9 @@
     }
 }
 
-.is-open {
-    transform: translateX(0);
-    // overflow: auto;
-}
+// .is-open {
+//     transform: translateX(0);
+// }
 // =======================================================
 .nav-list {
     display: flex;
