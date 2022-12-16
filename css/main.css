@@ -855,6 +855,12 @@ img {
     min-width: 450px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .modal-form-window {
+    min-height: 580px;
+    min-width: 530px;
+  }
+}
 
 .modal-button {
   position: absolute;
@@ -1022,6 +1028,12 @@ img {
     line-height: 1.16;
   }
 }
+@media screen and (min-width: 1024px) {
+  .label-input {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
 
 .label-input span {
   /* <span> */
@@ -1074,8 +1086,7 @@ img {
   letter-spacing: 0.06em;
   transition: background-color var(--cubic-animation);
 }
-
-.form-button:hover {
+.form-button :hover {
   background-color: #188ce8;
 }
 

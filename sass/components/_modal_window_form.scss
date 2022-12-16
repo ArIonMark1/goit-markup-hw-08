@@ -95,8 +95,11 @@
     color: #757575;
     @media screen and (min-width: 480px) {
         font-size: 12px;
-        line-height: 1.16;
-        
+        line-height: 1.16; 
+    }
+    @media screen and (min-width: 1024px) {
+        font-size: 14px;
+        line-height: 1.7;
     }
 }
 .label-input span {
@@ -149,7 +152,7 @@
     line-height: 1.88;
     letter-spacing: 0.06em;
     transition: background-color var(--cubic-animation);
-}
-.form-button:hover {
-    background-color: #188ce8;
+    :hover {
+            background-color: #188ce8;
+        }
 }
