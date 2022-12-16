@@ -1090,6 +1090,7 @@ img {
 
 .is-open {
   transform: translateX(0);
+  overflow: auto;
 }
 
 .nav-list {
