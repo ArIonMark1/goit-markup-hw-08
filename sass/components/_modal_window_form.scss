@@ -89,10 +89,15 @@
     align-items: center;
 
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 9px;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     color: #757575;
+    @media screen and (min-width: 480px) {
+        font-size: 12px;
+        line-height: 1.16;
+        
+    }
 }
 .label-input span {
     /* <span> */
@@ -116,6 +121,7 @@
 }
 .contract-link {
     /* <a> */
+    // display: inline;
     margin-left: 3px;
     text-decoration: underline;
     color: var(--logo-color);
