@@ -1,6 +1,9 @@
 /* -------------------- Стилі лінків клієнтів компанії  ---------- */
 .regular-customers {
     padding: 60px 0;
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }
 }
 .customers {
     display: flex;
@@ -10,14 +13,20 @@
 
 
     &__section {
-        height: 92px;
         flex-basis: calc((100% - 30px) / 2);
+
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 60px) / 3);
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 150px) / 6);
+        }
     }
     &__link {
-        display: inline-block;
         width: 100%;
         height: 100%;
-
+        padding: 16px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -36,49 +45,5 @@
     &__icon {
         fill: #afb1b8;
         transition: fill var(--cubic-animation);
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .regular-customers {
-            padding: 94px 0;
-        }
-    
-    .customers {
-        // display: flex;
-        // justify-content: center;
-        // gap: 30px;
-
-        &__section {
-            // height: 92px;
-            flex-basis: calc((100% - 150px) / 6);
-        }
-
-        // &__link {
-        //     display: inline-block;
-        //     width: 100%;
-        //     height: 100%;
-
-        //     display: flex;
-        //     align-items: center;
-        //     justify-content: center;
-        //     border: 1px solid #afb1b8;
-        //     border-radius: 4px;
-        //     transition: border var(--cubic-animation);
-
-            // &:hover,
-            // &:focus {
-            //     border: 1px solid var(--hover-link-color);
-
-            //     .customers__icon {
-            //         fill: var(--hover-link-color);
-            //     }
-            // }
-        // }
-
-        // &__icon {
-        //     fill: #afb1b8;
-        //     transition: fill var(--cubic-animation);
-        // }
     }
 }

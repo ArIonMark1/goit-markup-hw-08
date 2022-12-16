@@ -3,6 +3,9 @@
 .preference {
     padding: 60px 0;
     // border: 1px solid red;
+    @media screen and (min-width: 1440px) {
+        padding: 94px 0;
+    }
 }
 
 .preference-list {
@@ -10,9 +13,22 @@
     flex-direction: column;
     gap: 30px;
 
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     &__card {
-        // border: 1px solid red;
         text-align: center;
+
+        @media screen and (min-width: 768px) {
+            text-align: left;
+            flex-basis: calc((100% - 30px) / 2);
+        }
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+            flex-basis: calc((100% - 90px) / 4);
+        }
     }
     &__image {
         // height: 120px;
@@ -43,32 +59,4 @@
         letter-spacing: 0.03em;
         color: var(--first-main-color);
     }
-}
-
-
-@media screen and (min-width: 1440px) {
-    .preference {
-            padding: 94px 0;
-        }
-    
-        .preference-list {
-            flex-direction: row;
-    
-            &__card {
-                /* <li> */
-                width: 270px;
-                flex-basis: calc((100% - 90px) / 4);
-            }
-    
-            &__image {
-                // height: 120px;
-                background: #f5f4fa;
-                border-radius: 4px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 30px;
-            }
-        }
-    
 }
