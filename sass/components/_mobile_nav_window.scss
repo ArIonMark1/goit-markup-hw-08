@@ -57,7 +57,7 @@
         // display: flex;
         text-decoration: none;
         font-weight: 500;
-        font-size: 40px;
+        font-size: 38px;
         line-height: 1.17;
         letter-spacing: 0.02em;
         color: var(--second-main-color);
@@ -81,16 +81,26 @@
     gap: 30px;
     position: absolute;
     bottom: 120px;
-
-    &__link {
+    
+    &__phone {
         text-decoration: none;
         font-weight: 500;
-        font-size: 24px;
+        font-size: 32px;
+        line-height: 40px;
+        /* identical to box height */
+        letter-spacing: 0.02em;
+        color: #2196F3;
+    }
+    &__email {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 22px;
         line-height: 1.16;
         letter-spacing: 0.02em;
     
         color: #757575;
     }
+
 }
 
 .modal-social {
@@ -100,7 +110,7 @@
 
     &__container {
 
-        padding: 0 10px;
+        padding: 0 8px;
         border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
     :first-child {
@@ -111,7 +121,8 @@
     }
     &__link {
         font-weight: 500;
-        font-size: 16px;
+        // max-font-size:16px
+        font-size: 14px;
         line-height: 1.22;
         letter-spacing: 0.02em;
         color: var(--hover-link-color); 
