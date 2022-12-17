@@ -125,13 +125,18 @@ img {
   }
   .navigation .current.navigation__link::after {
     position: absolute;
-    bottom: -29px;
+    bottom: -33px;
     content: "";
     background-color: var(--hover-link-color);
     width: 100%;
     height: 4px;
     border-radius: 2px;
     transform: scaleX(1.1);
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .navigation .current.navigation__link::after {
+    bottom: -34px;
   }
 }
 
@@ -404,6 +409,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .team-list__section {
+    max-width: 370px;
     flex-basis: calc((100% - 30px) / 2);
   }
 }
@@ -540,12 +546,17 @@ img {
   width: 325px;
   margin-bottom: 40px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .filtration {
+    width: auto;
+    margin-bottom: 30px;
     justify-content: center;
     flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .filtration {
     margin-bottom: 50px;
-    width: auto;
   }
 }
 .filtration__button {
@@ -576,6 +587,11 @@ img {
   justify-content: center;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .content-cards {
+    justify-content: flex-start;
+  }
+}
 .content-cards__section {
   /* <li> */
   width: 100%;
@@ -584,9 +600,13 @@ img {
 .content-cards__section:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+@media screen and (min-width: 768px) {
+  .content-cards__section {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
 @media screen and (min-width: 1024px) {
   .content-cards__section {
-    width: auto;
     flex-basis: calc((100% - 60px) / 3);
   }
 }
@@ -601,9 +621,6 @@ img {
   height: 100%;
   padding: 24px;
   background: rgba(33, 150, 243, 0.9);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -616,6 +633,12 @@ img {
 }
 .content-cards__section:hover .modal__text {
   transform: translateY(0);
+}
+@media screen and (min-width: 768px) {
+  .modal__text {
+    width: 100%;
+    padding: 24px;
+  }
 }
 .modal__image {
   max-width: 370px;
@@ -657,10 +680,23 @@ img {
     gap: 60px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    text-align: left;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    gap: 0;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer__section {
     flex-basis: calc((100% - 60px) / 2);
     align-self: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    flex-basis: none;
   }
 }
 
@@ -676,6 +712,11 @@ img {
 .footer-contacts {
   margin-top: 20px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    text-align: left;
+  }
 }
 .footer-contacts__item {
   /* <li> */
@@ -717,6 +758,11 @@ img {
   gap: 10px;
   margin-top: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .social-links {
+    justify-content: flex-start;
+  }
+}
 .social-links__container {
   width: 44px;
   height: 44px;
@@ -749,6 +795,11 @@ img {
   align-items: center;
   gap: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .subscription-form {
+    flex-direction: row;
+  }
+}
 .subscription-form__input {
   /* input field */
   outline: none;
@@ -769,6 +820,11 @@ img {
 @media screen and (min-width: 768px) {
   .subscription-form__input {
     min-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription-form__input {
+    min-width: 360px;
   }
 }
 .subscription-form__input:hover {
@@ -804,37 +860,6 @@ img {
   fill: var(--third-main-color);
 }
 
-@media screen and (min-width: 1440px) {
-  .footer__container {
-    text-align: left;
-    display: flex;
-    align-items: baseline;
-  }
-  .address {
-    margin-right: 70px;
-  }
-  .footer-contacts {
-    -moz-text-align-last: left;
-         text-align-last: left;
-  }
-  .footer-contacts__item {
-    margin-bottom: 10px;
-  }
-  .social-links__container {
-    width: 44px;
-    height: 44px;
-  }
-  .subscription {
-    flex-grow: 1;
-    margin-left: 90px;
-  }
-  .subscription-form {
-    flex-direction: row;
-  }
-  .subscription-form__input {
-    height: 50px;
-  }
-}
 /* ------------------- Стилі модального вікна ------------------- */
 .background-window {
   position: fixed;
