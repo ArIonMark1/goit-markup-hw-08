@@ -29,12 +29,8 @@
         position: absolute;
         top: 0;
         height: 100%;
-        padding: 24px;
+        padding: 62px 24px;
         background: rgba(33, 150, 243, 0.9);
-
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
 
         font-style: normal;
         font-weight: 400;
@@ -51,7 +47,6 @@
         }
         @media screen and (min-width: 768px) {
             width: 100%;
-            padding: 24px;
         }
     }
     &__image {

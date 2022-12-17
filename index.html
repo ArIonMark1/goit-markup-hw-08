@@ -151,6 +151,10 @@
               <div class="description">
                 <img
                   class="description__image"
+                  srcset="
+                    ./images/main/desctop.jpg    1x,
+                    ./images/main/desctop-2x.jpg 2x
+                  "
                   src="./images/main/desctop.jpg"
                   alt="десктопні додатки"
                   width="370"
@@ -162,6 +166,10 @@
               <div class="description">
                 <img
                   class="description__image"
+                  srcset="
+                    ./images/main/mobile.jpg    1x,
+                    ./images/main/mobile-2x.jpg 2x
+                  "
                   src="./images/main/mobile.jpg"
                   alt="мобільні додатки"
                   width="370"
@@ -173,6 +181,10 @@
               <div class="description">
                 <img
                   class="description__image"
+                  srcset="
+                    ./images/main/design.jpg    1x,
+                    ./images/main/design-2x.jpg 2x
+                  "
                   src="./images/main/design.jpg"
                   alt="дезайнерські роботи"
                   width="370"
@@ -190,12 +202,36 @@
 
           <ul class="team-list">
             <li class="team-list__section">
-              <img
-                class="team-list__image"
-                src="./images/main/worker1.jpg"
-                alt="працівник компанії"
-                width="300"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/worker1.jpg    1x,
+                    ./images/main/worker1-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px )"
+                />
+                <source
+                  srcset="
+                    ./images/main/worker1-768.jpg    1x,
+                    ./images/main/worker1-768-2x.jpg 2x
+                  "
+                  media="(min-width: 768px )"
+                />
+                <source
+                  srcset="
+                    ./images/main/worker1-480.jpg    1x,
+                    ./images/main/worker1-480-2x.jpg 2x
+                  "
+                  media="(max-width: 767px )"
+                />
+                <img
+                  class="team-list__image"
+                  src="./images/main/worker1-480.jpg"
+                  alt="працівник компанії"
+                  width="450"
+                />
+              </picture>
+
               <div class="worker-info">
                 <h3 class="worker-info__header">Ігор Дем'яненко</h3>
                 <p class="worker-info__content">Product Designer</p>
@@ -241,12 +277,36 @@
               </div>
             </li>
             <li class="team-list__section">
-              <img
-                class="team-list__image"
-                src="./images/main/worker2.jpg"
-                alt="працівник компанії"
-                width="300"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/worker2.jpg    1x,
+                    ./images/main/worker2-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px )"
+                />
+                <source
+                  srcset="
+                    ./images/main/worker2-768.jpg    1x,
+                    ./images/main/worker2-768-2x.jpg 2x
+                  "
+                  media="(min-width: 768px )"
+                />
+                <source
+                  srcset="
+                    ./images/main/worker2-480.jpg    1x,
+                    ./images/main/worker2-480-2x.jpg 2x
+                  "
+                  media="(max-width: 767px )"
+                />
+                <img
+                  class="team-list__image"
+                  src="./images/main/worker2-480.jpg"
+                  alt="працівник компанії"
+                  width="450"
+                />
+              </picture>
+
               <div class="worker-info">
                 <h3 class="worker-info__header">Ольга Рєпіна</h3>
                 <p class="worker-info__content">Frontend Developer</p>
@@ -292,12 +352,36 @@
               </div>
             </li>
             <li class="team-list__section">
-              <img
-                class="team-list__image"
-                src="./images/main/worker3.jpg"
-                alt="працівник компанії"
-                width="300"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/worker3.jpg    1x,
+                    ./images/main/worker3-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/worker3-768.jpg    1x,
+                    ./images/main/worker3-768-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/worker3-480.jpg    1x,
+                    ./images/main/worker3-480-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="team-list__image"
+                  src="./images/main/worker3-480.jpg"
+                  alt="працівник компанії"
+                  width="450"
+                />
+              </picture>
+
               <div class="worker-info">
                 <h3 class="worker-info__header">Микола Тарасов</h3>
                 <p class="worker-info__content">Marketing</p>
@@ -343,12 +427,36 @@
               </div>
             </li>
             <li class="team-list__section">
-              <img
-                class="team-list__image"
-                src="./images/main/worker4.jpg"
-                alt="працівник компанії"
-                width="300"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/main/worker4.jpg    1x,
+                    ./images/main/worker4-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/worker4-768.jpg    1x,
+                    ./images/main/worker4-768-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/main/worker4-480.jpg    1x,
+                    ./images/main/worker4-480-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team-list__image"
+                  src="./images/main/worker4-480.jpg"
+                  alt="працівник компанії"
+                  width="300"
+                />
+              </picture>
+
               <div class="worker-info">
                 <h3 class="worker-info__header">Михайло Єрмаков</h3>
                 <p class="worker-info__content">UI Designer</p>

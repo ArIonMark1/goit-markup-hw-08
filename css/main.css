@@ -641,7 +641,7 @@ img {
   position: absolute;
   top: 0;
   height: 100%;
-  padding: 24px;
+  padding: 62px 24px;
   background: rgba(33, 150, 243, 0.9);
   font-style: normal;
   font-weight: 400;
@@ -659,7 +659,6 @@ img {
 @media screen and (min-width: 768px) {
   .modal__text {
     width: 100%;
-    padding: 24px;
   }
 }
 .modal__image {
