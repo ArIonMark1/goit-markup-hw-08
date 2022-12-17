@@ -212,14 +212,21 @@ img {
   margin: 0 auto;
   padding: 118px 0;
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/team-480.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-@media (min-device-pixel-ratio: 2) {
+@media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/team-768.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+    max-width: 1600px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/team.jpg);
   }
 }
 .hero__tittle {
@@ -231,6 +238,16 @@ img {
   text-transform: uppercase;
   color: var(--third-main-color, #000);
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1440px) {
+  .hero__tittle {
+    max-width: 695px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .hero__button {
   margin: 0 auto;
@@ -248,29 +265,17 @@ img {
   letter-spacing: 0.06em;
   color: var(--third-main-color);
 }
-
 @media screen and (min-width: 1440px) {
-  .hero {
-    padding: 200px 0;
-    max-width: 1600px;
-  }
-  .hero__tittle {
-    max-width: 695px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-  }
   .hero__button {
     padding: 10px 30px;
     color: var(--third-main-color);
     transition: background var(--cubic-animation);
   }
-  .hero__button:hover, .hero__button:focus {
-    background: #188ce8;
-  }
 }
+.hero__button:hover, .hero__button:focus {
+  background: #188ce8;
+}
+
 /* -------------------- Перелік переваг компанії ---------- */
 .preference {
   padding: 60px 0;
