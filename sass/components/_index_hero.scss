@@ -2,57 +2,35 @@
     margin: 0 auto;
     padding: 118px 0;
     text-align: center;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)),
-        url(../images/main/team-480.jpg);
+    background-image: var(--gradient), url(../images/main/team-480.jpg);
 
     @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: linear-gradient(
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-                url(../images/main/team-480-2x.jpg);
+            background-image: var(--gradient), url(../images/main/team-480-2x.jpg);
         }
 
     @media screen and (min-width: 768px) {
-        background-image: -webkit-gradient(linear,
-                    left top, left bottom,
-                    from(rgba(47, 48, 58, 0.4)),
-                    to(rgba(47, 48, 58, 0.4))),
-                url(../images/main/team-768.jpg);
+        background-image: var(--gradient), url(../images/main/team-768.jpg);
 
         @media (min-device-pixel-ratio: 2),
             (-webkit-min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-            background-image: -webkit-gradient(linear,
-                left top, left bottom,
-                from(rgba(47, 48, 58, 0.4)),
-                to(rgba(47, 48, 58, 0.4))),
-                url(../images/main/team-768-2x.jpg);
+            background-image: var(--gradient), url(../images/main/team-768-2x.jpg);
             }
     }
     @media screen and (min-width: 1200px) {
         padding: 200px 0;
         max-width: 1600px;
-        background-image: -webkit-gradient(linear,
-                left top, left bottom,
-                from(rgba(47, 48, 58, 0.4)),
-                to(rgba(47, 48, 58, 0.4))),
-                url(../images/main/team.jpg);
+        background-image: var(--gradient), url(../images/main/team.jpg);
 
         @media (min-device-pixel-ratio: 2),
             (-webkit-min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: -webkit-gradient(linear,
-                    left top, left bottom,
-                    from(rgba(47, 48, 58, 0.4)),
-                    to(rgba(47, 48, 58, 0.4))),
-                    url(../images/main/team-2x.jpg);
+                background-image: var(--gradient), url(../images/main/team-2x.jpg);
             }
                     
         }
