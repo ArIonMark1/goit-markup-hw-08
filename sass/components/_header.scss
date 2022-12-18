@@ -6,7 +6,7 @@
     @media screen and (min-width: 768px) {
         padding: 20px 0;
         }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1200px) {
         padding: 25px 0;
     }
     &__container {
@@ -16,12 +16,10 @@
         align-items: center;
         // border: 1px solid red;
     }
-
 }
 .navigation__container {
     display: flex;
 }
-
 .navigation {
     display: none;
     
@@ -34,7 +32,6 @@
         &__item {
             position: relative;
         }
-    
         &__link {
             display: flex;
             text-decoration: none;
@@ -61,12 +58,11 @@
                 height: 4px;
                 border-radius: 2px;
                 transform: scaleX(1.1);
-                @media screen and (min-width: 1024px){
+                @media screen and (min-width: 1200px){
                     bottom: -34px;
                 }
             }
         }
-        
     }
 }
 .contacts {
@@ -78,12 +74,11 @@
         // align-items: center;
         gap: 10px;
 
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: 1200px) {
             flex-direction: row;
             align-items: center;
             gap: 50px;
         }
-
         &__link {
             display: flex;
             align-items: center;
@@ -97,22 +92,19 @@
             transition: fill var(--cubic-animation),
                 color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-            @media screen and (min-width: 1024px) {
+            @media screen and (min-width: 1200px) {
                 gap: 10px;
                 font-size: inherit;
                 line-height: 1.14;
             }
-
             &:hover,
             &:focus {
                 color: var(--hover-link-color, red);
                 fill: var(--hover-link-color, red);
             }
         }
-
         &__ico {
             fill: currentColor;
         }
-        
     }
 }

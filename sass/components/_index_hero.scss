@@ -48,13 +48,14 @@
         text-transform: uppercase;
         color: var(--third-main-color, #000);
         margin-bottom: 30px;
-        @media screen and (min-width: 1440px) {
+
+        @media screen and (min-width: 1200px) {
+            font-size: 44px;
+            font-weight: 900;
+            line-height: 1.36;
             max-width: 695px;
             margin: 0 auto;
-            margin-bottom: 30px;
-            font-weight: 900;
-            font-size: 44px;
-            line-height: 1.36;
+            margin-bottom: 30px; 
         }
     }
 
@@ -76,7 +77,7 @@
         letter-spacing: 0.06em;
 
         color: var(--third-main-color);
-        @media screen and (min-width: 1440px) {
+        @media screen and (min-width: 1200px) {
             padding: 10px 30px;
             color: var(--third-main-color);
             transition: background var(--cubic-animation);
@@ -86,5 +87,4 @@
             background: #188ce8;
         }
     }
-    
 }
