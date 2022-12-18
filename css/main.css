@@ -641,11 +641,11 @@ img {
   position: absolute;
   top: 0;
   height: 100%;
-  padding: 62px 24px;
+  padding: 40px 24px;
   background: rgba(33, 150, 243, 0.9);
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--third-main-color);
@@ -656,9 +656,21 @@ img {
 .content-cards__section:hover .modal__text {
   transform: translateY(0);
 }
+@media screen and (min-width: 480px) {
+  .modal__text {
+    padding: 60px 24px;
+    font-size: 18px;
+  }
+}
 @media screen and (min-width: 768px) {
   .modal__text {
     width: 100%;
+    padding: 50px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__text {
+    padding: 60px 24px;
   }
 }
 .modal__image {
