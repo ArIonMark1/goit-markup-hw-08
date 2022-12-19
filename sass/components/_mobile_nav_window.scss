@@ -105,20 +105,36 @@
 
 .modal-social {
     display: flex;
+    flex-wrap: wrap;
+
     position: absolute;
     bottom: 50px;
+    // border: 1px solid red;
+    
 
     &__container {
+        // position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        padding: 0 8px;
-        border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+        &::before {
+            content: "";
+            background-color: rgba(33, 33, 33, 0.2);
+            width: 22px;
+            height: 1px;
+
+            transform: rotate(90deg);
+        }
     }
-    :first-child {
-        padding-left: 0;
-    }
-    :last-child {
-        border-right: none;
-    }
+    
+    // :first-child {
+    //     padding-left: 0;
+    // }
+    // :last-child {
+    //     border-right: none;
+    // }
     &__link {
         font-weight: 500;
         // max-font-size:16px

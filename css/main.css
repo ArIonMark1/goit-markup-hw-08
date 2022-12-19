@@ -1274,18 +1274,21 @@ img {
 
 .modal-social {
   display: flex;
+  flex-wrap: wrap;
   position: absolute;
   bottom: 50px;
 }
 .modal-social__container {
-  padding: 0 8px;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.modal-social :first-child {
-  padding-left: 0;
-}
-.modal-social :last-child {
-  border-right: none;
+.modal-social__container::before {
+  content: "";
+  background-color: rgba(33, 33, 33, 0.2);
+  width: 22px;
+  height: 1px;
+  transform: rotate(90deg);
 }
 .modal-social__link {
   font-weight: 500;
