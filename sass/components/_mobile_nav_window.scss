@@ -38,10 +38,6 @@
         fill: var(--hover-link-color, red);
     }
 }
-
-// .is-open {
-//     transform: translateX(0);
-// }
 // =======================================================
 .nav-list {
     display: flex;
@@ -54,7 +50,6 @@
     }
 
     &__link {
-        // display: flex;
         text-decoration: none;
         font-weight: 500;
         font-size: 38px;
@@ -87,7 +82,6 @@
         font-weight: 500;
         font-size: 32px;
         line-height: 40px;
-        /* identical to box height */
         letter-spacing: 0.02em;
         color: #2196F3;
     }
@@ -100,20 +94,18 @@
     
         color: #757575;
     }
-
 }
-
 .modal-social {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
 
     position: absolute;
     bottom: 50px;
-    // border: 1px solid red;
-    
 
     &__container {
-        // position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -127,17 +119,12 @@
 
             transform: rotate(90deg);
         }
+        &:first-child::before {
+            display: none;
+        }
     }
-    
-    // :first-child {
-    //     padding-left: 0;
-    // }
-    // :last-child {
-    //     border-right: none;
-    // }
     &__link {
         font-weight: 500;
-        // max-font-size:16px
         font-size: 14px;
         line-height: 1.22;
         letter-spacing: 0.02em;

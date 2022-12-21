@@ -1259,7 +1259,6 @@ img {
   font-weight: 500;
   font-size: 32px;
   line-height: 40px;
-  /* identical to box height */
   letter-spacing: 0.02em;
   color: #2196F3;
 }
@@ -1275,6 +1274,9 @@ img {
 .modal-social {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
   position: absolute;
   bottom: 50px;
 }
@@ -1289,6 +1291,9 @@ img {
   width: 22px;
   height: 1px;
   transform: rotate(90deg);
+}
+.modal-social__container:first-child::before {
+  display: none;
 }
 .modal-social__link {
   font-weight: 500;
