@@ -1254,6 +1254,12 @@ img {
   position: absolute;
   bottom: 120px;
 }
+@media screen and (max-width: 480px) {
+  .modal-contacts {
+    bottom: 140px;
+    gap: 20px;
+  }
+}
 .modal-contacts__phone {
   text-decoration: none;
   font-weight: 500;
@@ -1262,13 +1268,23 @@ img {
   letter-spacing: 0.02em;
   color: #2196F3;
 }
+@media screen and (max-width: 480px) {
+  .modal-contacts__phone {
+    font-size: 28px;
+  }
+}
 .modal-contacts__email {
   text-decoration: none;
   font-weight: 500;
   font-size: 22px;
   line-height: 1.16;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: inherit;
+}
+@media screen and (max-width: 480px) {
+  .modal-contacts__email {
+    font-size: 20px;
+  }
 }
 
 .modal-social {
@@ -1279,6 +1295,11 @@ img {
   row-gap: 15px;
   position: absolute;
   bottom: 50px;
+}
+@media screen and (max-width: 380px) {
+  .modal-social {
+    max-width: 200px;
+  }
 }
 .modal-social__container {
   display: flex;

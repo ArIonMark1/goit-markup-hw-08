@@ -76,6 +76,11 @@
     gap: 30px;
     position: absolute;
     bottom: 120px;
+    @media screen and (max-width: 480px) {
+        bottom: 140px;
+        gap: 20px;
+        
+    }
     
     &__phone {
         text-decoration: none;
@@ -84,6 +89,9 @@
         line-height: 40px;
         letter-spacing: 0.02em;
         color: #2196F3;
+        @media screen and (max-width:480px) {
+            font-size: 28px;
+        }
     }
     &__email {
         text-decoration: none;
@@ -92,7 +100,11 @@
         line-height: 1.16;
         letter-spacing: 0.02em;
     
-        color: #757575;
+        color: inherit;
+
+        @media screen and (max-width: 480px) {
+            font-size: 20px;
+        }
     }
 }
 .modal-social {
@@ -104,11 +116,20 @@
 
     position: absolute;
     bottom: 50px;
+    @media screen and (max-width: 380px) {
+        max-width: 200px;
+    }
 
     &__container {
         display: flex;
         justify-content: center;
         align-items: center;
+        // @media screen and (max-width: 480px){
+            // flex-basis: calc(100% / 2);
+            // justify-content: left;
+            // align-items:flex-start;
+        // }
+        
 
 
         &::before {
