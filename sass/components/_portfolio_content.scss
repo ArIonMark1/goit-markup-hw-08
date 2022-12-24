@@ -8,7 +8,7 @@
     }
     &__section {
         /* <li> */
-        @extend .button;
+
         width: 100%;
         transition: box-shadow var(--cubic-animation);
         &:hover {
@@ -64,6 +64,7 @@
     }
 }
 .item-content {
+    @extend .button;
     padding: 20px 24px;
     border-right: 1px solid #f2f2f2;
     border-left: 1px solid #f2f2f2;

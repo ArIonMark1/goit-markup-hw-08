@@ -36,7 +36,7 @@ img {
 }
 
 /* -------------------- Загальні стилі кнопок -------------------- */
-.button, .subscription-form__button, .content-cards__section, .filtration__button, .hero__button {
+.button, .subscription-form__button, .item-content, .filtration__button, .hero__button {
   cursor: pointer;
   font-family: inherit;
 }
