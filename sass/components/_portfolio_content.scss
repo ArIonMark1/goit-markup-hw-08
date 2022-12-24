@@ -8,6 +8,7 @@
     }
     &__section {
         /* <li> */
+        @extend .button;
         width: 100%;
         transition: box-shadow var(--cubic-animation);
         &:hover {

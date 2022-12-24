@@ -60,6 +60,7 @@
     }
 
     &__button {
+        @extend .button;
         margin: 0 auto;
         padding: 10px 24px;
         border: none;

@@ -36,7 +36,7 @@ img {
 }
 
 /* -------------------- Загальні стилі кнопок -------------------- */
-.button, .subscription-form__button, .filtration__button {
+.button, .subscription-form__button, .content-cards__section, .filtration__button, .hero__button {
   cursor: pointer;
   font-family: inherit;
 }
@@ -370,7 +370,7 @@ img {
   display: none;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .steck-company {
     display: block;
     padding-bottom: 94px;
