@@ -79,7 +79,6 @@
     @media screen and (max-width: 480px) {
         bottom: 140px;
         gap: 20px;
-        
     }
     
     &__phone {
@@ -117,6 +116,7 @@
     position: absolute;
     bottom: 50px;
     @media screen and (max-width: 380px) {
+        justify-content: start;
         max-width: 200px;
     }
 
@@ -124,13 +124,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        // @media screen and (max-width: 480px){
-            // flex-basis: calc(100% / 2);
-            // justify-content: left;
-            // align-items:flex-start;
-        // }
-        
-
 
         &::before {
             content: "";
@@ -140,8 +133,10 @@
 
             transform: rotate(90deg);
         }
-        &:first-child::before {
-            display: none;
+        @media screen and (min-width:480px){
+            &:first-child::before {
+                    display: none;
+                }
         }
     }
     &__link {
