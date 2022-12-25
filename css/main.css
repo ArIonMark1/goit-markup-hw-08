@@ -1296,7 +1296,7 @@ img {
   position: absolute;
   bottom: 50px;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 379px) {
   .modal-social {
     justify-content: start;
     max-width: 200px;
@@ -1310,11 +1310,22 @@ img {
 .modal-social__container::before {
   content: "";
   background-color: rgba(33, 33, 33, 0.2);
-  width: 22px;
-  height: 1px;
-  transform: rotate(90deg);
+  width: 1px;
+  height: 22px;
+  margin: 0 10px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 380px) {
+  .modal-social__container::before {
+    width: 22px;
+    height: 1px;
+    margin: 0;
+    transform: rotate(90deg);
+  }
+}
+.modal-social__container:nth-child(odd)::before {
+  margin-left: 0;
+}
+@media screen and (min-width: 380px) {
   .modal-social__container:first-child::before {
     display: none;
   }

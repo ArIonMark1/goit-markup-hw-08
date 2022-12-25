@@ -115,11 +115,11 @@
 
     position: absolute;
     bottom: 50px;
-    @media screen and (max-width: 380px) {
+
+    @media screen and (max-width: 379px) {
         justify-content: start;
         max-width: 200px;
     }
-
     &__container {
         display: flex;
         justify-content: center;
@@ -128,12 +128,21 @@
         &::before {
             content: "";
             background-color: rgba(33, 33, 33, 0.2);
-            width: 22px;
-            height: 1px;
-
-            transform: rotate(90deg);
+            width: 1px;
+            height: 22px;
+            margin: 0 10px;
+            
+            @media screen and (min-width: 380px) {
+                width: 22px;
+                height: 1px;
+                margin: 0;
+                transform: rotate(90deg);
+            }
         }
-        @media screen and (min-width:480px){
+        &:nth-child(odd)::before {
+                margin-left: 0;
+            }
+        @media screen and (min-width:380px){
             &:first-child::before {
                     display: none;
                 }
